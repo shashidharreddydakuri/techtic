@@ -13,7 +13,8 @@ const prompt = require('prompt-sync')();
 let virusSequence = prompt('Enter the Virus sequence : ');
 console.log(`Virus sequence is : ${virusSequence}`);
 
-
+const lengthOfVirusSequence = virusSequence.length;
+// console.log(lengthOfVirusSequence);
 
 const N = prompt('Enter the number of people : ');
 console.log(`number of people are : ${N}`);
@@ -27,8 +28,7 @@ for (let i = 0; i < N; i++) {
 // calculate the length of the blood samples array
 const lengthOfBloodSamples = bloodSamples.length;
 
-const lengthOfVirusSequence = virusSequence.length;
-// console.log(lengthOfVirusSequence);
+
 
 // console.log(lengthOfBloodSamples);
 let str;
@@ -43,6 +43,7 @@ for (i = 0; i < lengthOfBloodSamples; i++) {
 		singleBloodSampleLength,
 		lengthOfVirusSequence
 	);
+    // recieve boolean value
     if(result) {
         console.log('POSITIVE');
     } else{
@@ -53,7 +54,7 @@ for (i = 0; i < lengthOfBloodSamples; i++) {
 function testReport (p, q, s, t) {
     let j = 0;
     for (let i = 0; i < t && j < s; i++) {
-        if (p[j] == q[i]) {
+        if (p[j] == q[i]) { // character of p present in q or not
             j++;
         }
     }
