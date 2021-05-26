@@ -1,7 +1,7 @@
 // If the blood composition of the person is a subsequence of the virus composition V, then the person is  identified as POSITIVE otherwise NEGATIVE.
-// 1. Scientists gave virus (V) of composition string (coronavirus). 
+// 1. Scientists gave virus (V) of composition string (coronavirus).
 // 2. We have to take N number of samples (example input is 4)
-// 3. The blood samples strings are subsequence or not, ("abcde" is subsequence to "coronavirus" or not). means this sample "abcde" is "NEGATIVE". 
+// 3. The blood samples strings are subsequence or not, ("abcde" is subsequence to "coronavirus" or not). means this sample "abcde" is "NEGATIVE".
 // Constraints (edge case)
 // 1<= N <=10
 // 1<= |B|<= |V|<= 10^5
@@ -10,17 +10,31 @@
 
 const prompt = require('prompt-sync')();
 
-let virusSequence = prompt('Enter the Virus sequence');
+let virusSequence = prompt('Enter the Virus sequence : ');
 console.log(`Virus sequence is : ${virusSequence}`);
 
-const N = prompt('Enter the number of people');
+
+
+const N = prompt('Enter the number of people : ');
 console.log(`number of people are : ${N}`);
 
-let arr = [];
+let bloodSamples = [];
 for (let i = 0; i < N; i++) {
-	arr[i] = prompt('Enter the blood sample sequence ' + (i + 1)+' ');
+	bloodSamples[i] = prompt('Enter the blood sample sequence ' + (i + 1) + ' ');
 }
-console.log(arr);
+ console.log(bloodSamples);
 
-// length of the array "arr"
-const lengthOfArr = arr.length;
+// calculate the length of the blood samples array
+const lengthOfBloodSamples = bloodSamples.length;
+
+const lengthOfVirusSequence = virusSequence.length;
+// console.log(lengthOfVirusSequence);
+
+// console.log(lengthOfBloodSamples);
+let str;
+for (i = 0; i < lengthOfBloodSamples; i++) {
+  str = bloodSamples[i];
+  const singleBloodSampleLength = str.length;
+//   console.log(singleBloodSampleLength);
+  
+}
