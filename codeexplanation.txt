@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+prompt-sync npm package used for node comand line application
+
+virus sequence input is asked here
+
+
+
+
+number of people input asked here
+
+
+created empty blood samples array
+for loop to ask number of people's blood samples and push them to blood samples array
+
+
+blood samples displayed
+
+

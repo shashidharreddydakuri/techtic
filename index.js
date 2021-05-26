@@ -36,5 +36,26 @@ for (i = 0; i < lengthOfBloodSamples; i++) {
   str = bloodSamples[i];
   const singleBloodSampleLength = str.length;
 //   console.log(singleBloodSampleLength);
-  
+// testReport function call
+  let result = testReport(
+		str,
+		virusSequence,
+		singleBloodSampleLength,
+		lengthOfVirusSequence
+	);
+    if(result) {
+        console.log('POSITIVE');
+    } else{
+        console.log('NEGATIVE');
+    }
+}
+
+function testReport (p, q, s, t) {
+    let j = 0;
+    for (let i = 0; i < t && j < s; i++) {
+        if (p[j] == q[i]) {
+            j++;
+        }
+    }
+    return j == s; //return boolean value
 }
