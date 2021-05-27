@@ -11,17 +11,19 @@
 const prompt = require('prompt-sync')();
 
 let virusSequence = prompt('Enter the Virus sequence : ');
-console.log(`Virus sequence is : ${virusSequence}`);
+virusSequence = virusSequence.toLowerCase(); //
+console.log(`\n Virus sequence is : ${virusSequence}`);
 
 const lengthOfVirusSequence = virusSequence.length;
 // console.log(lengthOfVirusSequence);
 
 const N = prompt('Enter the number of people : ');
-console.log(`number of people are : ${N}`);
+console.log(`\n number of people are : ${N}`);
 
 let bloodSamples = [];
 for (let i = 0; i < N; i++) {
 	bloodSamples[i] = prompt('Enter the blood sample sequence ' + (i + 1) + ' ');
+    bloodSamples[i] = bloodSamples[i].toLowerCase();
 }
  console.log(bloodSamples);
 

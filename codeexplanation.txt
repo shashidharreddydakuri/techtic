@@ -1,5 +1,7 @@
 
+second for loop is to iterate over blood samples array
 
+third for loop is to iterate over single sample
 
 
 
@@ -25,3 +27,55 @@ for loop to ask number of people's blood samples and push them to blood samples 
 blood samples displayed
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enter the Virus sequence : CORONAVIRUS
+
+ Virus sequence is : coronavirus
+Enter the number of people : 4
+
+ number of people are : 4
+Enter the blood sample sequence 1 ABCDE
+Enter the blood sample sequence 2 crnas
+Enter the blood sample sequence 3 onerous
+Enter the blood sample sequence 4 viruscorona
+[ 'abcde', 'crnas', 'onerous', 'viruscorona' ]
+NEGATIVE
+POSITIVE
+NEGATIVE
+NEGATIVE
